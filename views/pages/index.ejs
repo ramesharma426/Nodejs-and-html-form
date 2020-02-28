@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Random page on random tab</title>
+</head>
+
+<body style= "background-color:#b9e0b8;">
+    <div class="col-md-6">
+        <div class="container container-fluid">
+            <form action="submit_form" method="POST">
+                <div class="form-group">
+                    <label for="uname">Username </label>
+                    <input type="text" class="form-control" name="uname" id="uname" aria-describedby="username"
+                        placeholder="Username">
+                    <small id="unamehelp" class="form-text text-muted">choose a unique username</small>
+                </div>
+                <div class="form-group">
+                    <label for="em">Email</label>
+                    <input type="email" class="form-control" id="em" name="em" placeholder="email">
+                    <small id="emhelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="pw">Password</label>
+                    <input type="password" class="form-control" id="pw" name="pw" placeholder="Password">
+                    <small id="pwhelp" class="form-text text-muted">neither does we share your password with
+                        anyone</small>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" class="form-control" id="dob" name="dob">
+                    <small id="dobhelp" class="form-text text-muted">we need DOB to filter content</small>
+                </div>
+                <div class="form-group">
+                    <label for="pn">Phone No.</label>
+                    <input type="number" class="form-control" id="pn" name="pn" placeholder="Phone Number">
+                    <small id="pnhelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="sal">Salary</label>
+                    <input type="number" class="form-control" id="sal" name="sal" placeholder="Rs ">
+                    <small id="salhelp" class="form-text text-muted"></small>
+                </div>
+
+                <div class="form-inline">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio" value = "1">Male &ensp;
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio" value ="2">Female &ensp;
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio" value = "3">Others &ensp;
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</body> 
+
+</html>
